@@ -20,8 +20,8 @@ export const navLinks = [
     icon: "/assets/icons/scan.svg",
   },
   {
-    label: "Object Recolor",
-    route: "/transformations/add/recolor",
+    label: "Object Recolour",
+    route: "/transformations/add/Recolour",
     icon: "/assets/icons/filter.svg",
   },
   {
@@ -150,12 +150,12 @@ export const transformationTypes = {
     },
     icon: "scan.svg",
   },
-  recolor: {
-    type: "recolor",
-    title: "Object Recolor",
-    subTitle: "Identify and recolor objects from the image",
+  Recolour: {
+    type: "Recolour",
+    title: "Object Recolour",
+    subTitle: "Identify and Recolour objects from the image",
     config: {
-      recolor: { prompt: "", to: "", multiple: true },
+      Recolour: { prompt: "", to: "", multiple: true },
     },
     icon: "filter.svg",
   },

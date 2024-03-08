@@ -221,13 +221,13 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           />
         )}
 
-        {(type === 'remove' || type === 'recolor') && (
+        {(type === 'remove' || type === 'Recolour') && (
           <div className="prompt-field">
             <CustomField 
               control={form.control}
               name="prompt"
               formLabel={
-                type === 'remove' ? 'Object to remove' : 'Object to recolor'
+                type === 'remove' ? 'Object to remove' : 'Object to Recolour'
               }
               className="w-full"
               render={({ field }) => (
@@ -244,7 +244,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
               )}
             />
 
-            {type === 'recolor' && (
+            {type === 'Recolour' && (
               <CustomField 
                 control={form.control}
                 name="color"
@@ -257,7 +257,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                     onChange={(e) => onInputChangeHandler(
                       'color',
                       e.target.value,
-                      'recolor',
+                      'Recolour',
                       field.onChange
                     )}
                   />

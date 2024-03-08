@@ -63,7 +63,7 @@ declare type Transformations = {
     removeShadow?: boolean;
     multiple?: boolean;
   };
-  recolor?: {
+  Recolour?: {
     prompt?: string;
     to: string;
     multiple?: boolean;
@@ -92,7 +92,7 @@ declare type TransformationTypeKey =
   | "restore"
   | "fill"
   | "remove"
-  | "recolor"
+  | "Recolour"
   | "removeBackground";
 
 // ====== URL QUERY PARAMS

@@ -40,7 +40,7 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Build an AI image SaaS platform that excels in image processing capabilities, integrates a secure payment infrastructure, offers advanced image search functionalities, and supports multiple AI features, including image restoration, recoloring, object removal, generative filling, and background removal. This project can be a guide for your next AI image tool and a boost to your portfolio. 
+Build an AI image SaaS platform that excels in image processing capabilities, integrates a secure payment infrastructure, offers advanced image search functionalities, and supports multiple AI features, including image restoration, Recolouring, object removal, generative filling, and background removal. This project can be a guide for your next AI image tool and a boost to your portfolio. 
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
 
@@ -67,7 +67,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Image Restoration**: Revive old or damaged images effortlessly
 
-👉 **Image Recoloring**: Customize images by replacing objects with desired colors easily
+👉 **Image Recolouring**: Customize images by replacing objects with desired colors easily
 
 👉 **Image Generative Fill**: Fill in missing areas of images seamlessly
 
@@ -107,9 +107,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/ZeroDesign.git
-cd ZeroDesign
-```
+git clone https://github.com/adrianhajdin/DesignZero.git
+cd DesignZero```
 
 **Installation**
 
@@ -678,8 +677,8 @@ export const navLinks = [
     icon: "/assets/icons/scan.svg",
   },
   {
-    label: "Object Recolor",
-    route: "/transformations/add/recolor",
+    label: "Object Recolour",
+    route: "/transformations/add/Recolour",
     icon: "/assets/icons/filter.svg",
   },
   {
@@ -808,12 +807,12 @@ export const transformationTypes = {
     },
     icon: "scan.svg",
   },
-  recolor: {
-    type: "recolor",
-    title: "Object Recolor",
-    subTitle: "Identify and recolor objects from the image",
+  Recolour: {
+    type: "Recolour",
+    title: "Object Recolour",
+    subTitle: "Identify and Recolour objects from the image",
     config: {
-      recolor: { prompt: "", to: "", multiple: true },
+      Recolour: { prompt: "", to: "", multiple: true },
     },
     icon: "filter.svg",
   },
@@ -1357,7 +1356,7 @@ declare type Transformations = {
     removeShadow?: boolean;
     multiple?: boolean;
   };
-  recolor?: {
+  Recolour?: {
     prompt?: string;
     to: string;
     multiple?: boolean;
@@ -1386,7 +1385,7 @@ declare type TransformationTypeKey =
   | "restore"
   | "fill"
   | "remove"
-  | "recolor"
+  | "Recolour"
   | "removeBackground";
 
 // ====== URL QUERY PARAMS
@@ -1922,7 +1921,7 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
       secure: true,
     })
 
-    let expression = 'folder=ZeroDesign';
+    let expression = 'folder=DesignZero';
 
     if (searchQuery) {
       expression += ` AND ${searchQuery}`
